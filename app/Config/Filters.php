@@ -2,6 +2,10 @@
 
 namespace Config;
 
+use App\Filters\ApiGuard;
+use App\Filters\ApiGuardAdmin;
+use App\Filters\LoggedIn;
+use App\Filters\PageForAdmin;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -23,6 +27,10 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'loggedIn'      => LoggedIn::class,
+        'pageForAdmin'  => PageForAdmin::class,
+        'apiGuard'      => ApiGuard::class,
+        'apiGuardAdmin' => ApiGuardAdmin::class,
     ];
 
     /**

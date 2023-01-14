@@ -1,0 +1,23 @@
+CRITICAL - 2023-01-14 10:11:58 --> getRelatedArtikel is not a validation rules group.
+in SYSTEMPATH/Validation/Validation.php on line 607.
+ 1 SYSTEMPATH/Validation/Validation.php(607): CodeIgniter\Validation\Exceptions\ValidationException::forGroupNotFound('getRelatedArtikel')
+ 2 SYSTEMPATH/Validation/Validation.php(123): CodeIgniter\Validation\Validation->loadRuleGroup('getRelatedArtikel')
+ 3 APPPATH/Controllers/Artikel.php(99): CodeIgniter\Validation\Validation->run([...], 'getRelatedArtikel')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Artikel->relatedArticle()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-14 12:13:20 --> Undefined index: id
+in APPPATH/Controllers/Artikel.php on line 106.
+ 1 APPPATH/Controllers/Artikel.php(106): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH/Controllers/Artikel.php', 106, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Artikel->relatedArticle()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-14 12:14:39 --> Undefined index: id
+in APPPATH/Controllers/Artikel.php on line 106.
+ 1 APPPATH/Controllers/Artikel.php(106): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH/Controllers/Artikel.php', 106, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Artikel->relatedArticle()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
