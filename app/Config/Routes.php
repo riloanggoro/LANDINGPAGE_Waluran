@@ -33,9 +33,71 @@ $routes->set404Override();
  * --------------------------------------------------------------------
  */
 
-// We get a performance increase by specifying the default
-// route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// HomePAge
+$routes->add('/',          'Home::index');
+$routes->add('/blog',      'Home::blogList');
+$routes->add('/blog/baca', 'Home::blogDetail');
+
+// Login & Logout
+$routes->group("login", function ($routes) {
+
+    // views
+    $routes->add(
+        '/', 
+        'Login::index', 
+        ['filter' => 'loggedIn']
+    );
+
+    // api
+    $routes->get('show',      'Login::show');  
+    $routes->post('create',   'Login::create');
+    $routes->delete('delete', 'Login::delete');
+
+});
+
+// Dashboard
+$routes->group("dashboard",['filter' => 'loggedIn'], function ($routes) {
+    
+    // views
+    $routes->add('',                 'Dashboard::index');
+    $routes->add('artikel',          'Dashboard::listArticle', ['filter' => 'pageForAdmin']);
+    $routes->add('tambah-artikel',   'Dashboard::addArticle',  ['filter' => 'pageForAdmin']);
+    $routes->add('edit-artikel',     'Dashboard::editArticle', ['filter' => 'pageForAdmin']);
+    $routes->add('kategori-artikel', 'Dashboard::categoryArticle', ['filter' => 'pageForAdmin']);
+
+});
+
+// Users
+$routes->group("user",['filter' => 'apiGuard'], function ($routes) {
+
+    // Api
+    $routes->get("profile", "Users::getProfile");
+    $routes->put("profile", "Users::updateProfile");
+
+});
+
+// Articles Categories
+$routes->group("kategori-artikel", function ($routes) {
+
+    // Api
+    $routes->get("",          "KategoriArtikel::show");
+    $routes->post("",         "KategoriArtikel::create",['filter' => 'apiGuardAdmin']);
+    $routes->put("",          "KategoriArtikel::update",['filter' => 'apiGuardAdmin']);
+    $routes->delete("(:any)", "KategoriArtikel::delete/$1",['filter' => 'apiGuardAdmin']);
+
+});
+
+// Articles
+$routes->group("artikel", function ($routes) {
+
+    // Api
+    $routes->get("",          "Artikel::show");
+    $routes->get("related",   "Artikel::relatedArticle");
+    $routes->post("",         "Artikel::create",['filter' => 'apiGuardAdmin']);
+    $routes->put("",          "Artikel::update",['filter' => 'apiGuardAdmin']);
+    $routes->delete("(:any)", "Artikel::delete/$1",['filter' => 'apiGuardAdmin']);
+
+});
 
 /*
  * --------------------------------------------------------------------

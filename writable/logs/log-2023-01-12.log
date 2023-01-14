@@ -1,0 +1,108 @@
+ERROR - 2023-01-12 06:10:01 --> mysqli_sql_exception: Table 'db_waluranweb.bagian' doesn't exist in /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `ba...', 0)
+#1 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ba...')
+#2 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ba...')
+#3 /opt/lampp7/htdocs/waluranweb/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ba...', Array, false)
+#4 /opt/lampp7/htdocs/waluranweb/app/Controllers/KategoriArtikel.php(211): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(927): App\Controllers\KategoriArtikel->delete('63bfa2868bcd2')
+#6 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriArtikel))
+#7 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp7/htdocs/waluranweb/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-12 06:13:09 --> mysqli_sql_exception: Table 'db_waluranweb.kategori_artikelx' doesn't exist in /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `ka...', 0)
+#1 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ka...')
+#2 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ka...')
+#3 /opt/lampp7/htdocs/waluranweb/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ka...', Array, false)
+#4 /opt/lampp7/htdocs/waluranweb/app/Controllers/KategoriArtikel.php(211): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(927): App\Controllers\KategoriArtikel->delete('63bfa2868bcd2')
+#6 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriArtikel))
+#7 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp7/htdocs/waluranweb/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-12 06:15:01 --> mysqli_sql_exception: Table 'db_waluranweb.kategori_artikelx' doesn't exist in /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `ka...', 0)
+#1 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ka...')
+#2 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ka...')
+#3 /opt/lampp7/htdocs/waluranweb/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ka...', Array, false)
+#4 /opt/lampp7/htdocs/waluranweb/app/Controllers/KategoriArtikel.php(211): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(927): App\Controllers\KategoriArtikel->delete('63bfa2868bcd2')
+#6 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriArtikel))
+#7 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp7/htdocs/waluranweb/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-12 06:16:43 --> mysqli_sql_exception: Table 'db_waluranweb.kategori_artikelx' doesn't exist in /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `ka...', 0)
+#1 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ka...')
+#2 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ka...')
+#3 /opt/lampp7/htdocs/waluranweb/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ka...', Array, false)
+#4 /opt/lampp7/htdocs/waluranweb/app/Controllers/KategoriArtikel.php(211): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(927): App\Controllers\KategoriArtikel->delete('63bfa2868bcd2')
+#6 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriArtikel))
+#7 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp7/htdocs/waluranweb/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-12 06:27:47 --> mysqli_sql_exception: Table 'db_waluranweb.kategori_artikelx' doesn't exist in /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `ka...', 0)
+#1 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ka...')
+#2 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ka...')
+#3 /opt/lampp7/htdocs/waluranweb/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ka...', Array, false)
+#4 /opt/lampp7/htdocs/waluranweb/app/Controllers/KategoriArtikel.php(211): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(927): App\Controllers\KategoriArtikel->delete('63bffb26512ee')
+#6 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriArtikel))
+#7 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp7/htdocs/waluranweb/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-12 06:28:06 --> mysqli_sql_exception: Table 'db_waluranweb.kategori_artikelx' doesn't exist in /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `ka...', 0)
+#1 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ka...')
+#2 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ka...')
+#3 /opt/lampp7/htdocs/waluranweb/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ka...', Array, false)
+#4 /opt/lampp7/htdocs/waluranweb/app/Controllers/KategoriArtikel.php(211): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(927): App\Controllers\KategoriArtikel->delete('63bffb26512ee')
+#6 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriArtikel))
+#7 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp7/htdocs/waluranweb/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-12 06:28:19 --> mysqli_sql_exception: Table 'db_waluranweb.kategori_artikelx' doesn't exist in /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `ka...', 0)
+#1 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ka...')
+#2 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ka...')
+#3 /opt/lampp7/htdocs/waluranweb/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ka...', Array, false)
+#4 /opt/lampp7/htdocs/waluranweb/app/Controllers/KategoriArtikel.php(211): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(927): App\Controllers\KategoriArtikel->delete('63bffb26512ee')
+#6 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriArtikel))
+#7 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp7/htdocs/waluranweb/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-12 06:29:17 --> mysqli_sql_exception: Table 'db_waluranweb.kategori_artikelx' doesn't exist in /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `ka...', 0)
+#1 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ka...')
+#2 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ka...')
+#3 /opt/lampp7/htdocs/waluranweb/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ka...', Array, false)
+#4 /opt/lampp7/htdocs/waluranweb/app/Controllers/KategoriArtikel.php(211): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(927): App\Controllers\KategoriArtikel->delete('63bffb26512ee')
+#6 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriArtikel))
+#7 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp7/htdocs/waluranweb/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-12 06:36:39 --> mysqli_sql_exception: Table 'db_waluranweb.kategori_artikelx' doesn't exist in /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /opt/lampp7/htdocs/waluranweb/system/Database/MySQLi/Connection.php(292): mysqli->query('DELETE FROM `ka...', 0)
+#1 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ka...')
+#2 /opt/lampp7/htdocs/waluranweb/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ka...')
+#3 /opt/lampp7/htdocs/waluranweb/system/Database/BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ka...', Array, false)
+#4 /opt/lampp7/htdocs/waluranweb/app/Controllers/KategoriArtikel.php(211): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(927): App\Controllers\KategoriArtikel->delete('63bffdf415db7')
+#6 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriArtikel))
+#7 /opt/lampp7/htdocs/waluranweb/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp7/htdocs/waluranweb/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}

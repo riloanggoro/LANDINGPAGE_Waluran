@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?= $this->extend('LayoutHtml/index') ?>
 
-<head>
-	<title>Waluran's Blogs</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<!-- CSS -->
+<!-- Css -->
+<?= $this->section('layoutCss'); ?>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,7 +13,31 @@
 	<link rel="stylesheet" href="<?= base_url('assets/css/jquery.timepicker.css'); ?>">
 	<link rel="stylesheet" href="<?= base_url('assets/css/owl.carousel.min.css'); ?>">
 	<link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
-</head>
+<?= $this->endSection(); ?>
+
+<!-- JS -->
+<?= $this->section('layoutJs'); ?>
+	<script src="<?= base_url('assets/js/jquery.min.js'); ?>"></script>
+	<script src="<?= base_url('assets/js/jquery-migrate-3.0.1.min.js'); ?>"></script>
+	<script src="<?= base_url('assets/js/popper.min.js'); ?>"></script>
+	<script src="<?= base_url('assets/js/bootstrap.min.js'); ?>"></script>
+	<script src="<?= base_url('assets/js/jquery.easing.1.3.js'); ?>"></script>
+	<script src="<?= base_url('assets/js/jquery.waypoints.min.js'); ?>"></script>
+	<script src="<?= base_url('assets/js/jquery.stellar.min.js'); ?>"></script>
+	<script src="<?= base_url('assets/js/owl.carousel.min.js'); ?>"></script>
+	<script src="<?= base_url('assets/js/jquery.magnific-popup.min.js'); ?>"></script>
+	<script src="<?= base_url('assets/js/jquery.animateNumber.min.js'); ?>"></script>
+	<script src="<?= base_url('assets/js/bootstrap-datepicker.js'); ?>"></script>
+	<script src="<?= base_url('assets/js/scrollax.min.js'); ?>"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+	</script>
+	<script src="<?= base_url('assets/js/google-map.js'); ?>"></script>
+	<script src="<?= base_url('assets/js/homepage.main.js'); ?>"></script>
+<?= $this->endSection(); ?>
+
+<!-- Html -->
+<?= $this->section('layoutHtml'); ?>
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -31,12 +50,12 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
-					<li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
-					<li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+						<li class="nav-item"><a href="<?= base_url('/') ?>" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
+						<li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
+						<li class="nav-item active"><a href="<?= base_url('/blog') ?>" class="nav-link">Blog</a></li>
+						<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -60,151 +79,34 @@
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row d-flex">
+				<?php foreach($artikel as $a) { ?>
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
 						<a href="blog-single.html" class="block-20"
-						style="background-image: url(<?= base_url('assets/images/image_1.jpg'); ?>);">
+						style="background-image: url(<?= $a['thumbnail'] ?>);">
 						</a>
 						<div class="text">
 							<div class="d-flex align-items-center mb-4 topp">
 								<div class="one">
-									<span class="day">11</span>
+									<span class="day"><?= date('d', $a['published_at']) ?></span>
 								</div>
 								<div class="two">
-									<span class="yr">2020</span>
-									<span class="mos">September</span>
+									<span class="yr"><?= date('Y', $a['published_at']) ?></span>
+									<span class="mos"><?= date('F', $a['published_at']) ?></span>
 								</div>
 							</div>
-							<h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-							<p><a href="#" class="btn btn-primary">Read more</a></p>
+							<h3 class="heading" style="text-transform: capitalize;"><a href="#"><?= $a['title']; ?></a></h3>
+							<p><a href="<?= base_url('/blog/baca?slug='.$a['slug']) ?>" class="btn btn-primary">Read more</a></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="blog-single.html" class="block-20"
-						style="background-image: url(<?= base_url('assets/images/image_2.jpg'); ?>);">
-						</a>
-						<div class="text">
-							<div class="d-flex align-items-center mb-4 topp">
-								<div class="one">
-									<span class="day">11</span>
-								</div>
-								<div class="two">
-									<span class="yr">2020</span>
-									<span class="mos">September</span>
-								</div>
-							</div>
-							<h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-							<p><a href="#" class="btn btn-primary">Read more</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="blog-single.html" class="block-20"
-						style="background-image: url(<?= base_url('assets/images/image_3.jpg'); ?>);">
-						</a>
-						<div class="text">
-							<div class="d-flex align-items-center mb-4 topp">
-								<div class="one">
-									<span class="day">11</span>
-								</div>
-								<div class="two">
-									<span class="yr">2020</span>
-									<span class="mos">September</span>
-								</div>
-							</div>
-							<h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-							<p><a href="#" class="btn btn-primary">Read more</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="blog-single.html" class="block-20"
-						style="background-image: url(<?= base_url('assets/images/image_4.jpg'); ?>);">
-						</a>
-						<div class="text">
-							<div class="d-flex align-items-center mb-4 topp">
-								<div class="one">
-									<span class="day">11</span>
-								</div>
-								<div class="two">
-									<span class="yr">2020</span>
-									<span class="mos">September</span>
-								</div>
-							</div>
-							<h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-							<p><a href="#" class="btn btn-primary">Read more</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="blog-single.html" class="block-20"
-						style="background-image: url(<?= base_url('assets/images/image_5.jpg'); ?>);">
-						</a>
-						<div class="text">
-							<div class="d-flex align-items-center mb-4 topp">
-								<div class="one">
-									<span class="day">11</span>
-								</div>
-								<div class="two">
-									<span class="yr">2020</span>
-									<span class="mos">September</span>
-								</div>
-							</div>
-							<h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-							<p><a href="#" class="btn btn-primary">Read more</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="blog-single.html" class="block-20"
-						style="background-image: url(<?= base_url('assets/images/image_6.jpg'); ?>);">
-						</a>
-						<div class="text">
-							<div class="d-flex align-items-center mb-4 topp">
-								<div class="one">
-									<span class="day">11</span>
-								</div>
-								<div class="two">
-									<span class="yr">2020</span>
-									<span class="mos">September</span>
-								</div>
-							</div>
-							<h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-							<p><a href="#" class="btn btn-primary">Read more</a></p>
-						</div>
-					</div>
-				</div>
+				<?php } ?>
 			</div>
 			<div class="row mt-5">
 				<div class="col text-center">
 					<div class="block-27">
-						<ul>
-							<li><a href="#">&lt;</a></li>
-							<li class="active"><span>1</span></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">&gt;</a></li>
-						</ul>
+						<!-- /App/Views/Components -->
+						<?= $pager->links('artikel', 'my_pagination'); ?> 
 					</div>
 				</div>
 			</div>
@@ -295,33 +197,12 @@
 		</div>
 	</footer>
 
-
-
 	<!-- loader -->
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
 			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" /></svg></div>
 
-
-	<script src="<?= base_url('assets/js/jquery.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/jquery-migrate-3.0.1.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/popper.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/bootstrap.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/jquery.easing.1.3.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/jquery.waypoints.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/jquery.stellar.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/owl.carousel.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/jquery.magnific-popup.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/jquery.animateNumber.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/bootstrap-datepicker.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/scrollax.min.js'); ?>"></script>
-	<script
-		src="<?= base_url('https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false'); ?>">
-	</script>
-	<script src="<?= base_url('assets/js/google-map.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/main.js'); ?>"></script>
-
 </body>
 
-</html>
+<?= $this->endSection(); ?>
