@@ -353,6 +353,7 @@
 		})
 		.catch(err => {
 			if (err.response.status == 404){
+				window.location.replace(`${BASE_URL}/not-found`);
 			}  
 			else if (err.response.status == 500){
 			}

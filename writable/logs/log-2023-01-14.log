@@ -7,3 +7,17 @@ in SYSTEMPATH/Validation/Validation.php on line 607.
  5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
  6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-14 12:13:20 --> Undefined index: id
+in APPPATH/Controllers/Artikel.php on line 106.
+ 1 APPPATH/Controllers/Artikel.php(106): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH/Controllers/Artikel.php', 106, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Artikel->relatedArticle()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-14 12:14:39 --> Undefined index: id
+in APPPATH/Controllers/Artikel.php on line 106.
+ 1 APPPATH/Controllers/Artikel.php(106): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH/Controllers/Artikel.php', 106, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Artikel->relatedArticle()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
