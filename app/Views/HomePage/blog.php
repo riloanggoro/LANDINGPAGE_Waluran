@@ -2,38 +2,37 @@
 
 <!-- Css -->
 <?= $this->section('layoutCss'); ?>
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="<?= base_url('assets/css/animate.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/css/owl.theme.default.min.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/css/magnific-popup.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/css/bootstrap-datepicker.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/css/flaticon.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/css/jquery.timepicker.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/css/owl.carousel.min.css'); ?>">
-	<link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="<?= base_url('assets/css/animate.css'); ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/owl.theme.default.min.css'); ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/magnific-popup.css'); ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/bootstrap-datepicker.css'); ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/flaticon.css'); ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/jquery.timepicker.css'); ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/owl.carousel.min.css'); ?>">
+<link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
 <?= $this->endSection(); ?>
 
 <!-- JS -->
 <?= $this->section('layoutJs'); ?>
-	<script src="<?= base_url('assets/js/jquery.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/jquery-migrate-3.0.1.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/popper.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/bootstrap.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/jquery.easing.1.3.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/jquery.waypoints.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/jquery.stellar.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/owl.carousel.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/jquery.magnific-popup.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/jquery.animateNumber.min.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/bootstrap-datepicker.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/scrollax.min.js'); ?>"></script>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
-	</script>
-	<script src="<?= base_url('assets/js/google-map.js'); ?>"></script>
-	<script src="<?= base_url('assets/js/homepage.main.js'); ?>"></script>
+<script src="<?= base_url('assets/js/jquery.min.js'); ?>"></script>
+<script src="<?= base_url('assets/js/jquery-migrate-3.0.1.min.js'); ?>"></script>
+<script src="<?= base_url('assets/js/popper.min.js'); ?>"></script>
+<script src="<?= base_url('assets/js/bootstrap.min.js'); ?>"></script>
+<script src="<?= base_url('assets/js/jquery.easing.1.3.js'); ?>"></script>
+<script src="<?= base_url('assets/js/jquery.waypoints.min.js'); ?>"></script>
+<script src="<?= base_url('assets/js/jquery.stellar.min.js'); ?>"></script>
+<script src="<?= base_url('assets/js/owl.carousel.min.js'); ?>"></script>
+<script src="<?= base_url('assets/js/jquery.magnific-popup.min.js'); ?>"></script>
+<script src="<?= base_url('assets/js/jquery.animateNumber.min.js'); ?>"></script>
+<script src="<?= base_url('assets/js/bootstrap-datepicker.js'); ?>"></script>
+<script src="<?= base_url('assets/js/scrollax.min.js'); ?>"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+</script>
+<script src="<?= base_url('assets/js/google-map.js'); ?>"></script>
+<script src="<?= base_url('assets/js/homepage.main.js'); ?>"></script>
 <?= $this->endSection(); ?>
 
 <!-- Html -->
@@ -42,7 +41,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">Desa<span>Wisata Hanjeli</span></a>
+			<a class="navbar-brand" href="<?= base_url('/')?>">Desa<span>Wisata Hanjeli</span></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
 				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
@@ -50,19 +49,20 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a href="<?= base_url('/') ?>" class="nav-link">Home</a></li>
+					<!-- <li class="nav-item active"><a href="<?= base_url('/') ?>" class="nav-link">Home</a></li>
 						<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 						<li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
-						<li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
-						<li class="nav-item active"><a href="<?= base_url('/blog') ?>" class="nav-link">Blog</a></li>
-						<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+						<li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li> -->
+					<li class="nav-item"><a href="<?= base_url('/blog') ?>" class="nav-link">Blog</a></li>
+					<!-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<!-- END nav -->
 
-	<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url(<?= base_url('assets/images/bg_1.jpg'); ?>);">
+	<section class="hero-wrap hero-wrap-2 js-fullheight"
+		style="background-image: url(<?= base_url('assets/images/bg_1.jpg'); ?>);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
@@ -83,7 +83,7 @@
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
 						<a href="blog-single.html" class="block-20"
-						style="background-image: url(<?= $a['thumbnail'] ?>);">
+							style="background-image: url(<?= $a['thumbnail'] ?>);">
 						</a>
 						<div class="text">
 							<div class="d-flex align-items-center mb-4 topp">
@@ -95,8 +95,10 @@
 									<span class="mos"><?= date('F', $a['published_at']) ?></span>
 								</div>
 							</div>
-							<h3 class="heading" style="text-transform: capitalize;"><a href="#"><?= $a['title']; ?></a></h3>
-							<p><a href="<?= base_url('/blog/baca?slug='.$a['slug']) ?>" class="btn btn-primary">Read more</a></p>
+							<h3 class="heading" style="text-transform: capitalize;"><a href="#"><?= $a['title']; ?></a>
+							</h3>
+							<p><a href="<?= base_url('/blog/baca?slug='.$a['slug']) ?>" class="btn btn-primary">Read
+									more</a></p>
 						</div>
 					</div>
 				</div>
@@ -106,7 +108,7 @@
 				<div class="col text-center">
 					<div class="block-27">
 						<!-- /App/Views/Components -->
-						<?= $pager->links('artikel', 'my_pagination'); ?> 
+						<?= $pager->links('artikel', 'my_pagination'); ?>
 					</div>
 				</div>
 			</div>
@@ -128,7 +130,8 @@
 		</div>
 	</section>
 
-	<footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(<?= base_url('assets/images/bg_3.jpg'); ?>);">
+	<footer class="ftco-footer bg-bottom ftco-no-pt"
+		style="background-image: url(<?= base_url('assets/images/bg_3.jpg'); ?>);">
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-md pt-5">
